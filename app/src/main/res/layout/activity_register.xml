@@ -4,19 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#43C6DB"
     tools:context=".RegisterActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="153dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginLeft="128dp"
-        android:layout_marginTop="32dp"
-        android:layout_weight="1"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/imageView2"
+        android:layout_width="109dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/twiter" />
+        app:srcCompat="@drawable/reg" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="215dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:hint="What's Your Name?"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="215dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:hint="Enter e-Mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="215dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:text="Next"
+        android:background="@drawable/round"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        tools:layout_editor_absoluteY="468dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
